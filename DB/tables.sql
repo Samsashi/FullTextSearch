@@ -9,4 +9,4 @@ CREATE TABLE book (
    author VARCHAR(64) NOT NULL,
    createdate DATETIME NOT NULL,
    updatedate DATETIME NOT NULL
-);
+); 
