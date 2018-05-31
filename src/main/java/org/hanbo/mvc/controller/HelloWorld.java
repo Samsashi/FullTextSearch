@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloWorld
 {
    private static Logger _logger = Logger.getLogger(HelloWorld.class);
-   
+    
    @Autowired
    private BookRepository _repo;
    
