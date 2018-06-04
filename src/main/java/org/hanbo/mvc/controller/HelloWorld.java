@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloWorld
 {
    private static Logger _logger = Logger.getLogger(HelloWorld.class);
-    
+   Integer seconds = 1;
    @Autowired
    private BookRepository _repo;
    
@@ -30,7 +30,15 @@ public class HelloWorld
 
       ModelAndView mav = new ModelAndView("hello");
       mav.addObject("message", "Hello World!");
+      try {
+          Thread.sleep(seconds*1000);
+      } catch (InterruptedException e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
+      }
       return mav;
+           
+
    }
 
    @RequestMapping(value = "/addBook", method = RequestMethod.GET)
