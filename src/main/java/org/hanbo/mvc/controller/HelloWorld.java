@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloWorld
 {
    private static Logger _logger = Logger.getLogger(HelloWorld.class);
-   Integer seconds = 10;
+   Integer seconds = 1000;
    @Autowired
    private BookRepository _repo;
    
