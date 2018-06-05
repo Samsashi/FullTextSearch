@@ -30,12 +30,12 @@ public class HelloWorld
 
       ModelAndView mav = new ModelAndView("hello");
       mav.addObject("message", "Hello World!");
-      try {
+     /* try {
           Thread.sleep(seconds*1000);
       } catch (InterruptedException e) {
           // TODO Auto-generated catch block
           e.printStackTrace();
-      }
+      }*/
       return mav;
            
 
@@ -66,12 +66,12 @@ public class HelloWorld
       
       ModelAndView mav = new ModelAndView("done");
       mav.addObject("message", "Add book to DB successfully");
-      try {
+/*      try {
           Thread.sleep(seconds*1000);
       } catch (InterruptedException e) {
           // TODO Auto-generated catch block
           e.printStackTrace();
-      }
+      }*/
       return mav;
    }
    
@@ -103,12 +103,12 @@ public class HelloWorld
       
       ModelAndView mav = new ModelAndView("foundBooks");
       mav.addObject("foundBooks", bookModels);
-      try {
+/*      try {
           Thread.sleep(seconds*1000);
       } catch (InterruptedException e) {
           // TODO Auto-generated catch block
           e.printStackTrace();
-      }
+      }*/
       return mav;
    }
 }
